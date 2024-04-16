@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# Git 커밋 시 커밋 메세지에 대해 린팅하는 훅
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpx commitlint --edit ${1}
